@@ -1,3 +1,4 @@
+require 'pry'
 # Add  code here!
 
 # EVEN AND ODD NUMBERS
@@ -29,7 +30,7 @@ def prime?(integer)
   else
     array = (2..(integer - 1)).to_a
     array.any? do |n|
-      
+      binding.pry
       !(integer % n == 0)
     end
   end

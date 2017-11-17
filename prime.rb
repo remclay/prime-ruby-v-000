@@ -11,7 +11,7 @@
 #  end
 #end
 
-# REMOVE EVEN NUMBERS
+# REMOVE EVEN NUMBERS --> Fastest run time
 #def prime?(i)
 #  if i < 2 || i%2 == 0
 #    false
@@ -33,7 +33,3 @@
 #    end
 #  end
 #end
-
-def prime?(i)
-  i > 1 ? !(2..i/2).any? { |n| i%n == 0 } : false
-end

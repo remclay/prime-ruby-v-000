@@ -35,5 +35,5 @@
 #end
 
 def prime?(n)
-  n > 2 ? !(2..n/2).any? { |f| n%f == 0 } : false
+  n > 1 ? !(2..n/2).any? { |f| n%f == 0 } : false
 end

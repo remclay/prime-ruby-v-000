@@ -2,14 +2,14 @@
 # Add  code here!
 
 # EVEN AND ODD NUMBERS
-#def prime?(i)
-#  if i < 2
-#    false
-#  else
-#    array = (2..(integer - 1)).to_a    #need brackets?
-#    array.none? {|n| i % n == 0}
-#  end
-#end
+def prime?(i)
+  if i < 2
+    false
+  else
+    array = (2..(integer - 1)).to_a    #need brackets?
+    array.none? {|n| i % n == 0}
+  end
+end
 
 # REMOVE EVEN NUMBERS --> Fastest run time
 #def prime?(i)

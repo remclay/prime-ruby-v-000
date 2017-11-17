@@ -6,7 +6,7 @@ def prime?(i)
   if i < 2
     false
   else
-    array = 2..(i - 1).to_a    #need brackets?
+    array = (2..(i - 1)).to_a    #need brackets?
     array.none? {|n| i % n == 0}
   end
 end

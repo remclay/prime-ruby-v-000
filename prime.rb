@@ -23,14 +23,17 @@
 #end
 
 # ANY VS NONE
+#def prime?(integer)
+#    if integer < 2
+#    false
+#  else
+#    array = (2..(integer - 1)).to_a
+#    !array.any? do |n|
+#      (integer % n == 0)
+#    end
+#  end
+#end
 
 def prime?(integer)
-    if integer < 2
-    false
-  else
-    array = (2..(integer - 1)).to_a
-    !array.any? do |n|
-      (integer % n == 0)
-    end
-  end
+  n > 2 ? !(2..n/2).any? { |f| n%f == 0 } : false
 end
